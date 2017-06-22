@@ -11,7 +11,7 @@
 // Generated from file `M01001.ice'
 #import <objc/Ice/LocalException.h>
 #import <objc/Ice/Stream.h>
-#import "M01001.h"
+#import <M01001.h>
 #import <objc/runtime.h>
 
 

@@ -17,7 +17,7 @@
 #import <objc/Ice/Stream.h>
 #import <objc/Ice/LocalObject.h>
 #import <objc/Ice/Exception.h>
-#import "Comm.h"
+#import <Comm.h>
 #import <objc/Ice/BuiltinSequences.h>
 
 @class m01001M01001ServiceIF;

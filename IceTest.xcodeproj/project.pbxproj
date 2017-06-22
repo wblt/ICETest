@@ -17,14 +17,14 @@
 		04CAB90B1E70215800F4C3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CAB90A1E70215800F4C3F0 /* Assets.xcassets */; };
 		04CAB90E1E70215800F4C3F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CAB90C1E70215800F4C3F0 /* LaunchScreen.storyboard */; };
 		04CAB9191E70215800F4C3F0 /* IceTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAB9181E70215800F4C3F0 /* IceTestTests.m */; };
-		04CAB9241E70215800F4C3F0 /* IceTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAB9231E70215800F4C3F0 /* IceTestUITests.m */; };
 		04CAB9341E70247600F4C3F0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9331E70247600F4C3F0 /* Security.framework */; };
 		04CAB9361E7024B800F4C3F0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9351E7024B800F4C3F0 /* CFNetwork.framework */; };
 		04CAB9381E7024CD00F4C3F0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9371E7024CD00F4C3F0 /* ExternalAccessory.framework */; };
-		363973421EFA778E00D18496 /* M01001.ice in Resources */ = {isa = PBXBuildFile; fileRef = 363973411EFA778E00D18496 /* M01001.ice */; };
-		363973451EFA77A100D18496 /* M01001.m in Sources */ = {isa = PBXBuildFile; fileRef = 363973441EFA77A100D18496 /* M01001.m */; };
-		369914521EFA6CEC0082CFC8 /* Comm.ice in Resources */ = {isa = PBXBuildFile; fileRef = 369914501EFA6CEC0082CFC8 /* Comm.ice */; };
-		369914581EFA6D0A0082CFC8 /* Comm.m in Sources */ = {isa = PBXBuildFile; fileRef = 369914551EFA6D0A0082CFC8 /* Comm.m */; };
+		36CA1A961EFB8E100002B72E /* Comm.ice in Resources */ = {isa = PBXBuildFile; fileRef = 36CA1A941EFB8E100002B72E /* Comm.ice */; };
+		36CA1A971EFB8E100002B72E /* M01001.ice in Resources */ = {isa = PBXBuildFile; fileRef = 36CA1A951EFB8E100002B72E /* M01001.ice */; };
+		36CA1A9C1EFB8E420002B72E /* Comm.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1A991EFB8E420002B72E /* Comm.m */; };
+		36CA1A9D1EFB8E420002B72E /* M01001.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1A9B1EFB8E420002B72E /* M01001.m */; };
+		36CA1AA11EFB8F760002B72E /* M01001Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1AA01EFB8F760002B72E /* M01001Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -35,8 +35,8 @@
 			fileType = pattern.proxy;
 			isEditable = 1;
 			outputFiles = (
-				"$(SRCROOT)/IceTest/$(INPUT_FILE_BASE).h",
-				"$(SRCROOT)/IceTest/$(INPUT_FILE_BASE).m",
+				"$(SRCROOT)/IceTest/ICEInterface/$(INPUT_FILE_BASE).h",
+				"$(SRCROOT)/IceTest/ICEInterface/$(INPUT_FILE_BASE).m",
 			);
 			script = /usr/local/bin/icebuilder;
 		};
@@ -44,13 +44,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		04CAB9151E70215800F4C3F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04CAB8F31E70215800F4C3F0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04CAB8FA1E70215800F4C3F0;
-			remoteInfo = IceTest;
-		};
-		04CAB9201E70215800F4C3F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04CAB8F31E70215800F4C3F0 /* Project object */;
 			proxyType = 1;
@@ -76,18 +69,18 @@
 		04CAB9141E70215800F4C3F0 /* IceTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CAB9181E70215800F4C3F0 /* IceTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IceTestTests.m; sourceTree = "<group>"; };
 		04CAB91A1E70215800F4C3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04CAB91F1E70215800F4C3F0 /* IceTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04CAB9231E70215800F4C3F0 /* IceTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IceTestUITests.m; sourceTree = "<group>"; };
-		04CAB9251E70215800F4C3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CAB9331E70247600F4C3F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		04CAB9351E7024B800F4C3F0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		04CAB9371E7024CD00F4C3F0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		363973411EFA778E00D18496 /* M01001.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = M01001.ice; sourceTree = "<group>"; };
-		363973431EFA77A100D18496 /* M01001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M01001.h; sourceTree = "<group>"; };
-		363973441EFA77A100D18496 /* M01001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M01001.m; sourceTree = "<group>"; };
-		369914501EFA6CEC0082CFC8 /* Comm.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Comm.ice; sourceTree = "<group>"; };
-		369914541EFA6D0A0082CFC8 /* Comm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comm.h; sourceTree = "<group>"; };
-		369914551EFA6D0A0082CFC8 /* Comm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comm.m; sourceTree = "<group>"; };
+		36CA1A941EFB8E100002B72E /* Comm.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Comm.ice; sourceTree = "<group>"; };
+		36CA1A951EFB8E100002B72E /* M01001.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = M01001.ice; sourceTree = "<group>"; };
+		36CA1A981EFB8E420002B72E /* Comm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comm.h; sourceTree = "<group>"; };
+		36CA1A991EFB8E420002B72E /* Comm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comm.m; sourceTree = "<group>"; };
+		36CA1A9A1EFB8E420002B72E /* M01001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M01001.h; sourceTree = "<group>"; };
+		36CA1A9B1EFB8E420002B72E /* M01001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M01001.m; sourceTree = "<group>"; };
+		36CA1A9F1EFB8F760002B72E /* M01001Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M01001Test.h; sourceTree = "<group>"; };
+		36CA1AA01EFB8F760002B72E /* M01001Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M01001Test.m; sourceTree = "<group>"; };
+		36CA1AA21EFB91200002B72E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +104,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04CAB91C1E70215800F4C3F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,7 +112,6 @@
 			children = (
 				04CAB8FD1E70215800F4C3F0 /* IceTest */,
 				04CAB9171E70215800F4C3F0 /* IceTestTests */,
-				04CAB9221E70215800F4C3F0 /* IceTestUITests */,
 				04CAB8FC1E70215800F4C3F0 /* Products */,
 				04CAB9321E70247600F4C3F0 /* Frameworks */,
 			);
@@ -137,7 +122,6 @@
 			children = (
 				04CAB8FB1E70215800F4C3F0 /* IceTest.app */,
 				04CAB9141E70215800F4C3F0 /* IceTestTests.xctest */,
-				04CAB91F1E70215800F4C3F0 /* IceTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,20 +129,18 @@
 		04CAB8FD1E70215800F4C3F0 /* IceTest */ = {
 			isa = PBXGroup;
 			children = (
-				363973431EFA77A100D18496 /* M01001.h */,
-				363973441EFA77A100D18496 /* M01001.m */,
-				369914541EFA6D0A0082CFC8 /* Comm.h */,
-				369914551EFA6D0A0082CFC8 /* Comm.m */,
+				36CA1A9E1EFB8F360002B72E /* UnitTest */,
+				36CA1A931EFB8DF10002B72E /* slice */,
+				36CA1A891EFB89D80002B72E /* ICEInterface */,
 				04CAB9011E70215800F4C3F0 /* AppDelegate.h */,
 				04CAB9021E70215800F4C3F0 /* AppDelegate.m */,
 				04CAB9041E70215800F4C3F0 /* ViewController.h */,
 				04CAB9051E70215800F4C3F0 /* ViewController.m */,
-				369914501EFA6CEC0082CFC8 /* Comm.ice */,
-				363973411EFA778E00D18496 /* M01001.ice */,
 				04CAB9071E70215800F4C3F0 /* Main.storyboard */,
 				04CAB90A1E70215800F4C3F0 /* Assets.xcassets */,
 				04CAB90C1E70215800F4C3F0 /* LaunchScreen.storyboard */,
 				04CAB90F1E70215800F4C3F0 /* Info.plist */,
+				36CA1AA21EFB91200002B72E /* PrefixHeader.pch */,
 				04CAB8FE1E70215800F4C3F0 /* Supporting Files */,
 			);
 			path = IceTest;
@@ -181,15 +163,6 @@
 			path = IceTestTests;
 			sourceTree = "<group>";
 		};
-		04CAB9221E70215800F4C3F0 /* IceTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				04CAB9231E70215800F4C3F0 /* IceTestUITests.m */,
-				04CAB9251E70215800F4C3F0 /* Info.plist */,
-			);
-			path = IceTestUITests;
-			sourceTree = "<group>";
-		};
 		04CAB9321E70247600F4C3F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +174,35 @@
 				04CAB9331E70247600F4C3F0 /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36CA1A891EFB89D80002B72E /* ICEInterface */ = {
+			isa = PBXGroup;
+			children = (
+				36CA1A981EFB8E420002B72E /* Comm.h */,
+				36CA1A991EFB8E420002B72E /* Comm.m */,
+				36CA1A9A1EFB8E420002B72E /* M01001.h */,
+				36CA1A9B1EFB8E420002B72E /* M01001.m */,
+			);
+			path = ICEInterface;
+			sourceTree = "<group>";
+		};
+		36CA1A931EFB8DF10002B72E /* slice */ = {
+			isa = PBXGroup;
+			children = (
+				36CA1A941EFB8E100002B72E /* Comm.ice */,
+				36CA1A951EFB8E100002B72E /* M01001.ice */,
+			);
+			path = slice;
+			sourceTree = "<group>";
+		};
+		36CA1A9E1EFB8F360002B72E /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				36CA1A9F1EFB8F760002B72E /* M01001Test.h */,
+				36CA1AA01EFB8F760002B72E /* M01001Test.m */,
+			);
+			path = UnitTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,24 +244,6 @@
 			productReference = 04CAB9141E70215800F4C3F0 /* IceTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04CAB91E1E70215800F4C3F0 /* IceTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04CAB92E1E70215800F4C3F0 /* Build configuration list for PBXNativeTarget "IceTestUITests" */;
-			buildPhases = (
-				04CAB91B1E70215800F4C3F0 /* Sources */,
-				04CAB91C1E70215800F4C3F0 /* Frameworks */,
-				04CAB91D1E70215800F4C3F0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04CAB9211E70215800F4C3F0 /* PBXTargetDependency */,
-			);
-			name = IceTestUITests;
-			productName = IceTestUITests;
-			productReference = 04CAB91F1E70215800F4C3F0 /* IceTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -275,11 +259,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					04CAB9131E70215800F4C3F0 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 04CAB8FA1E70215800F4C3F0;
-					};
-					04CAB91E1E70215800F4C3F0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 04CAB8FA1E70215800F4C3F0;
@@ -301,7 +280,6 @@
 			targets = (
 				04CAB8FA1E70215800F4C3F0 /* IceTest */,
 				04CAB9131E70215800F4C3F0 /* IceTestTests */,
-				04CAB91E1E70215800F4C3F0 /* IceTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,22 +289,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363973421EFA778E00D18496 /* M01001.ice in Resources */,
+				36CA1A971EFB8E100002B72E /* M01001.ice in Resources */,
 				04CAB90E1E70215800F4C3F0 /* LaunchScreen.storyboard in Resources */,
 				04CAB90B1E70215800F4C3F0 /* Assets.xcassets in Resources */,
 				04CAB9091E70215800F4C3F0 /* Main.storyboard in Resources */,
-				369914521EFA6CEC0082CFC8 /* Comm.ice in Resources */,
+				36CA1A961EFB8E100002B72E /* Comm.ice in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		04CAB9121E70215800F4C3F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04CAB91D1E70215800F4C3F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,9 +312,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CAB9061E70215800F4C3F0 /* ViewController.m in Sources */,
-				363973451EFA77A100D18496 /* M01001.m in Sources */,
-				369914581EFA6D0A0082CFC8 /* Comm.m in Sources */,
+				36CA1A9D1EFB8E420002B72E /* M01001.m in Sources */,
+				36CA1A9C1EFB8E420002B72E /* Comm.m in Sources */,
 				04CAB9031E70215800F4C3F0 /* AppDelegate.m in Sources */,
+				36CA1AA11EFB8F760002B72E /* M01001Test.m in Sources */,
 				04CAB9001E70215800F4C3F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,14 +328,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04CAB91B1E70215800F4C3F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04CAB9241E70215800F4C3F0 /* IceTestUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -371,11 +335,6 @@
 			isa = PBXTargetDependency;
 			target = 04CAB8FA1E70215800F4C3F0 /* IceTest */;
 			targetProxy = 04CAB9151E70215800F4C3F0 /* PBXContainerItemProxy */;
-		};
-		04CAB9211E70215800F4C3F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04CAB8FA1E70215800F4C3F0 /* IceTest */;
-			targetProxy = 04CAB9201E70215800F4C3F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,8 +450,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ADDITIONAL_SDKS = "/usr/local/lib/IceTouch/ObjC/$(PLATFORM_NAME).sdk";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59Q2E3377P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IceTest/PrefixHeader.pch";
 				INFOPLIST_FILE = IceTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -503,6 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/IceTest/ICEInterface/";
 			};
 			name = Debug;
 		};
@@ -510,8 +472,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ADDITIONAL_SDKS = "/usr/local/lib/IceTouch/ObjC/$(PLATFORM_NAME).sdk";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59Q2E3377P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IceTest/PrefixHeader.pch";
 				INFOPLIST_FILE = IceTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,52 +486,37 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/IceTest/ICEInterface/";
 			};
 			name = Release;
 		};
 		04CAB92C1E70215800F4C3F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "/usr/local/lib/IceTouch/ObjC/$(PLATFORM_NAME).sdk";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = IceTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceTest.app/IceTest";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/IceTest/ICEInterface/";
 			};
 			name = Debug;
 		};
 		04CAB92D1E70215800F4C3F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "/usr/local/lib/IceTouch/ObjC/$(PLATFORM_NAME).sdk";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = IceTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceTest.app/IceTest";
-			};
-			name = Release;
-		};
-		04CAB92F1E70215800F4C3F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = IceTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = IceTest;
-			};
-			name = Debug;
-		};
-		04CAB9301E70215800F4C3F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = IceTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = IceTest;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/IceTest/ICEInterface/";
 			};
 			name = Release;
 		};
@@ -597,15 +546,6 @@
 			buildConfigurations = (
 				04CAB92C1E70215800F4C3F0 /* Debug */,
 				04CAB92D1E70215800F4C3F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04CAB92E1E70215800F4C3F0 /* Build configuration list for PBXNativeTarget "IceTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04CAB92F1E70215800F4C3F0 /* Debug */,
-				04CAB9301E70215800F4C3F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

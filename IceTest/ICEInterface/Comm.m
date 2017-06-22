@@ -11,7 +11,7 @@
 // Generated from file `Comm.ice'
 #import <objc/Ice/LocalException.h>
 #import <objc/Ice/Stream.h>
-#import "Comm.h"
+#import <Comm.h>
 #import <objc/runtime.h>
 
 

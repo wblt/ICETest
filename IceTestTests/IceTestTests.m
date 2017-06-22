@@ -8,7 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
+#import "M01001Test.h"
+
 @interface IceTestTests : XCTestCase
+
+@property (nonatomic,strong) M01001Test *m01001Test;
 
 @end
 
@@ -17,6 +21,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.m01001Test = [[M01001Test alloc] init];
 }
 
 - (void)tearDown {
@@ -27,6 +32,10 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    m01001UserData *dd = [self.m01001Test m01001001:@"1729179" pwd:@"666666"];
+    
+    NSLog(@"username:%@",dd.realname);
 }
 
 - (void)testPerformanceExample {
