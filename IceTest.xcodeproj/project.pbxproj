@@ -20,6 +20,7 @@
 		04CAB9341E70247600F4C3F0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9331E70247600F4C3F0 /* Security.framework */; };
 		04CAB9361E7024B800F4C3F0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9351E7024B800F4C3F0 /* CFNetwork.framework */; };
 		04CAB9381E7024CD00F4C3F0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9371E7024CD00F4C3F0 /* ExternalAccessory.framework */; };
+		368B19BF1EFCC98800496E3C /* IceGlacierUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B19BE1EFCC98800496E3C /* IceGlacierUtil.m */; };
 		36CA1A961EFB8E100002B72E /* Comm.ice in Resources */ = {isa = PBXBuildFile; fileRef = 36CA1A941EFB8E100002B72E /* Comm.ice */; };
 		36CA1A971EFB8E100002B72E /* M01001.ice in Resources */ = {isa = PBXBuildFile; fileRef = 36CA1A951EFB8E100002B72E /* M01001.ice */; };
 		36CA1A9C1EFB8E420002B72E /* Comm.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1A991EFB8E420002B72E /* Comm.m */; };
@@ -72,6 +73,8 @@
 		04CAB9331E70247600F4C3F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		04CAB9351E7024B800F4C3F0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		04CAB9371E7024CD00F4C3F0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		368B19BD1EFCC98800496E3C /* IceGlacierUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceGlacierUtil.h; sourceTree = "<group>"; };
+		368B19BE1EFCC98800496E3C /* IceGlacierUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IceGlacierUtil.m; sourceTree = "<group>"; };
 		36CA1A941EFB8E100002B72E /* Comm.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Comm.ice; sourceTree = "<group>"; };
 		36CA1A951EFB8E100002B72E /* M01001.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = M01001.ice; sourceTree = "<group>"; };
 		36CA1A981EFB8E420002B72E /* Comm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comm.h; sourceTree = "<group>"; };
@@ -129,6 +132,7 @@
 		04CAB8FD1E70215800F4C3F0 /* IceTest */ = {
 			isa = PBXGroup;
 			children = (
+				368B19BC1EFCC96000496E3C /* IceGlacierUtil */,
 				36CA1A9E1EFB8F360002B72E /* UnitTest */,
 				36CA1A931EFB8DF10002B72E /* slice */,
 				36CA1A891EFB89D80002B72E /* ICEInterface */,
@@ -174,6 +178,15 @@
 				04CAB9331E70247600F4C3F0 /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		368B19BC1EFCC96000496E3C /* IceGlacierUtil */ = {
+			isa = PBXGroup;
+			children = (
+				368B19BD1EFCC98800496E3C /* IceGlacierUtil.h */,
+				368B19BE1EFCC98800496E3C /* IceGlacierUtil.m */,
+			);
+			path = IceGlacierUtil;
 			sourceTree = "<group>";
 		};
 		36CA1A891EFB89D80002B72E /* ICEInterface */ = {
@@ -311,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368B19BF1EFCC98800496E3C /* IceGlacierUtil.m in Sources */,
 				04CAB9061E70215800F4C3F0 /* ViewController.m in Sources */,
 				36CA1A9D1EFB8E420002B72E /* M01001.m in Sources */,
 				36CA1A9C1EFB8E420002B72E /* Comm.m in Sources */,

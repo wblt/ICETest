@@ -15,5 +15,9 @@
 
 #import <objc/Ice.h>
 
+#import <objc/Glacier2.h>
+
+#import "IceGlacierUtil.h"
+
 #endif
 #endif /* PrefixHeader_pch */

@@ -9,6 +9,7 @@
 #import "M01001Test.h"
 
 @implementation M01001Test
+
 - (m01001UserData *)m01001001:(NSString *)userName pwd:(NSString *)password {
     id<ICECommunicator> communicator = nil;
     @try {
@@ -33,6 +34,17 @@
         }
     }
     
+
+    
+    [[IceGlacierUtil shareIceGlacier] requestIceAsynchronousWithLocator:@"M01001Service" serviceClass:[m01001M01001ServiceIFPrx class] parameterAPI:@"" executeAPI:@"m01001001: pwd: " success:^(id data) {
+        
+        
+        
+    } failue:^(NSString *error) {
+        
+    }];
+    
+
 }
 
 
