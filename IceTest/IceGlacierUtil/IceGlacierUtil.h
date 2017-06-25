@@ -58,8 +58,7 @@ typedef void(^ProgressBlock)(ICEFloat progress);
  @param success             成功回调
  @param failue              失败回调
  */
-- (void)requestIceAsynchronousWithRouter:(NSString *)serviceName serviceClass:(Class)serviceClass name:(NSString *)sessionName password:(NSString *)sessionPassword parameterAPI:(id)param
-                    executeAPI:(NSString *)action success:(SuccessBlock)success failue:(FailureBlock)failue;
+- (void)requestIceAsynchronousWithRouter:(NSString *)serviceName serviceClass:(Class)serviceClass name:(NSString *)sessionName password:(NSString *)sessionPassword executeAPI:(NSString *)action success:(SuccessBlock)success failue:(FailureBlock)failue parameterAPI:(id)param,...;
 
 /**
  ICE 直连 网络请求
@@ -71,7 +70,7 @@ typedef void(^ProgressBlock)(ICEFloat progress);
  @param success             成功回调
  @param failue              失败回调
  */
-- (void)requestIceAsynchronousWithLocator:(NSString *)serviceName serviceClass:(Class)serviceClass parameterAPI:(id)param
-                    executeAPI:(NSString *)action success:(SuccessBlock)success failue:(FailureBlock)failue;
+- (void)requestIceAsynchronousWithLocator:(NSString *)serviceName serviceClass:(Class)serviceClass
+                    executeAPI:(NSString *)action success:(SuccessBlock)success failue:(FailureBlock)failue parameterAPI:(id)param,...;
 
 @end

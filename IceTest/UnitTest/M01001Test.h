@@ -12,6 +12,6 @@
 
 @interface M01001Test : NSObject
 
-- (m01001UserData *)m01001001:(NSString *)userName pwd:(NSString *)password;
+- (void)m01001001:(NSString *)userName pwd:(NSString *)password;
 
 @end

@@ -32,10 +32,7 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
-    m01001UserData *dd = [self.m01001Test m01001001:@"1729179" pwd:@"666666"];
-    
-    NSLog(@"username:%@",dd.realname);
+    [self.m01001Test m01001001:@"1729179" pwd:@"666666"];
 }
 
 - (void)testPerformanceExample {

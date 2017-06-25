@@ -20,11 +20,11 @@
 		04CAB9341E70247600F4C3F0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9331E70247600F4C3F0 /* Security.framework */; };
 		04CAB9361E7024B800F4C3F0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9351E7024B800F4C3F0 /* CFNetwork.framework */; };
 		04CAB9381E7024CD00F4C3F0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAB9371E7024CD00F4C3F0 /* ExternalAccessory.framework */; };
+		36023FBE1EFD8C8500F3B38C /* Comm.m in Sources */ = {isa = PBXBuildFile; fileRef = 36023FBB1EFD8C8500F3B38C /* Comm.m */; };
+		36023FBF1EFD8C8500F3B38C /* M01001.m in Sources */ = {isa = PBXBuildFile; fileRef = 36023FBD1EFD8C8500F3B38C /* M01001.m */; };
 		368B19BF1EFCC98800496E3C /* IceGlacierUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B19BE1EFCC98800496E3C /* IceGlacierUtil.m */; };
 		36CA1A961EFB8E100002B72E /* Comm.ice in Resources */ = {isa = PBXBuildFile; fileRef = 36CA1A941EFB8E100002B72E /* Comm.ice */; };
 		36CA1A971EFB8E100002B72E /* M01001.ice in Resources */ = {isa = PBXBuildFile; fileRef = 36CA1A951EFB8E100002B72E /* M01001.ice */; };
-		36CA1A9C1EFB8E420002B72E /* Comm.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1A991EFB8E420002B72E /* Comm.m */; };
-		36CA1A9D1EFB8E420002B72E /* M01001.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1A9B1EFB8E420002B72E /* M01001.m */; };
 		36CA1AA11EFB8F760002B72E /* M01001Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA1AA01EFB8F760002B72E /* M01001Test.m */; };
 /* End PBXBuildFile section */
 
@@ -73,14 +73,14 @@
 		04CAB9331E70247600F4C3F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		04CAB9351E7024B800F4C3F0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		04CAB9371E7024CD00F4C3F0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		36023FBA1EFD8C8500F3B38C /* Comm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comm.h; sourceTree = "<group>"; };
+		36023FBB1EFD8C8500F3B38C /* Comm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comm.m; sourceTree = "<group>"; };
+		36023FBC1EFD8C8500F3B38C /* M01001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M01001.h; sourceTree = "<group>"; };
+		36023FBD1EFD8C8500F3B38C /* M01001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M01001.m; sourceTree = "<group>"; };
 		368B19BD1EFCC98800496E3C /* IceGlacierUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IceGlacierUtil.h; sourceTree = "<group>"; };
 		368B19BE1EFCC98800496E3C /* IceGlacierUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IceGlacierUtil.m; sourceTree = "<group>"; };
 		36CA1A941EFB8E100002B72E /* Comm.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Comm.ice; sourceTree = "<group>"; };
 		36CA1A951EFB8E100002B72E /* M01001.ice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = M01001.ice; sourceTree = "<group>"; };
-		36CA1A981EFB8E420002B72E /* Comm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comm.h; sourceTree = "<group>"; };
-		36CA1A991EFB8E420002B72E /* Comm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comm.m; sourceTree = "<group>"; };
-		36CA1A9A1EFB8E420002B72E /* M01001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M01001.h; sourceTree = "<group>"; };
-		36CA1A9B1EFB8E420002B72E /* M01001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M01001.m; sourceTree = "<group>"; };
 		36CA1A9F1EFB8F760002B72E /* M01001Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M01001Test.h; sourceTree = "<group>"; };
 		36CA1AA01EFB8F760002B72E /* M01001Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M01001Test.m; sourceTree = "<group>"; };
 		36CA1AA21EFB91200002B72E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -192,10 +192,10 @@
 		36CA1A891EFB89D80002B72E /* ICEInterface */ = {
 			isa = PBXGroup;
 			children = (
-				36CA1A981EFB8E420002B72E /* Comm.h */,
-				36CA1A991EFB8E420002B72E /* Comm.m */,
-				36CA1A9A1EFB8E420002B72E /* M01001.h */,
-				36CA1A9B1EFB8E420002B72E /* M01001.m */,
+				36023FBA1EFD8C8500F3B38C /* Comm.h */,
+				36023FBB1EFD8C8500F3B38C /* Comm.m */,
+				36023FBC1EFD8C8500F3B38C /* M01001.h */,
+				36023FBD1EFD8C8500F3B38C /* M01001.m */,
 			);
 			path = ICEInterface;
 			sourceTree = "<group>";
@@ -325,10 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				368B19BF1EFCC98800496E3C /* IceGlacierUtil.m in Sources */,
+				36023FBE1EFD8C8500F3B38C /* Comm.m in Sources */,
 				04CAB9061E70215800F4C3F0 /* ViewController.m in Sources */,
-				36CA1A9D1EFB8E420002B72E /* M01001.m in Sources */,
-				36CA1A9C1EFB8E420002B72E /* Comm.m in Sources */,
 				04CAB9031E70215800F4C3F0 /* AppDelegate.m in Sources */,
+				36023FBF1EFD8C8500F3B38C /* M01001.m in Sources */,
 				36CA1AA11EFB8F760002B72E /* M01001Test.m in Sources */,
 				04CAB9001E70215800F4C3F0 /* main.m in Sources */,
 			);
@@ -396,7 +396,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -444,7 +444,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -467,6 +467,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59Q2E3377P;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IceTest/PrefixHeader.pch";
 				INFOPLIST_FILE = IceTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -475,6 +476,7 @@
 					"-ObjC",
 					"-lc++",
 					"-lIceObjC",
+					"-lGlacier2ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,6 +491,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59Q2E3377P;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IceTest/PrefixHeader.pch";
 				INFOPLIST_FILE = IceTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -497,6 +500,7 @@
 					"-ObjC",
 					"-lc++",
 					"-lIceObjC",
+					"-lGlacier2ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.IceTest.IceTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

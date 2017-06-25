@@ -8,9 +8,12 @@
 
 #import "M01001Test.h"
 
+
 @implementation M01001Test
 
-- (m01001UserData *)m01001001:(NSString *)userName pwd:(NSString *)password {
+- (void)m01001001:(NSString *)userName pwd:(NSString *)password {
+    /*
+    // 没有封装
     id<ICECommunicator> communicator = nil;
     @try {
         //声明一个通信器
@@ -33,17 +36,14 @@
             [communicator destroy];
         }
     }
+    */
     
-
-    
-    [[IceGlacierUtil shareIceGlacier] requestIceAsynchronousWithLocator:@"M01001Service" serviceClass:[m01001M01001ServiceIFPrx class] parameterAPI:@"" executeAPI:@"m01001001: pwd: " success:^(id data) {
-        
-        
-        
+    // 封装
+    [[IceGlacierUtil shareIceGlacier] requestIceAsynchronousWithLocator:@"M01001Service" serviceClass:[m01001M01001ServiceIFPrx class] executeAPI:@"m01001001:pwd:" success:^(id data) {
+        NSLog(@"成功返回结果%@",data);
     } failue:^(NSString *error) {
-        
-    }];
-    
+        NSLog(@"失败返回结果%@",error);
+    } parameterAPI:@"1729179",@"666666" ];
 
 }
 
