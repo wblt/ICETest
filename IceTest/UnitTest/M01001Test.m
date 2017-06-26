@@ -28,7 +28,7 @@
         //获取代理对象
         id<m01001M01001ServiceIFPrx> prx = [m01001M01001ServiceIFPrx checkedCast:base];
         m01001UserData *dd =  [prx m01001001:@"1729179" pwd:@"666666"];
-        return dd;
+        NSLog(@"realName:%@",dd.realname);
     } @catch (NSException *exception) {
         NSLog(@"%s\n%@", __FUNCTION__, exception);
     } @finally {
@@ -36,15 +36,20 @@
             [communicator destroy];
         }
     }
-    */
-    
+     */
     // 封装
-    [[IceGlacierUtil shareIceGlacier] requestIceAsynchronousWithLocator:@"M01001Service" serviceClass:[m01001M01001ServiceIFPrx class] executeAPI:@"m01001001:pwd:" success:^(id data) {
-        NSLog(@"成功返回结果%@",data);
+    [[IceGlacierUtil shareIceGlacier] requestIceAsynchronousWithLocator:^(id data) {
+        id<ICECommunicator> communicator = data;
+        ICEObjectPrx *base = (ICEObjectPrx *)[communicator stringToProxy:@"M01001Service"];
+        id<m01001M01001ServiceIFPrx> prx = [m01001M01001ServiceIFPrx checkedCast:base];
+        m01001UserData *dd =  [prx m01001001:@"1729179" pwd:@"666666"];
+        NSLog(@"成功返回结果:%@",dd.realname);
+        dispatch_async(dispatch_get_main_queue(), ^ {
+            [[IceGlacierUtil shareIceGlacier] requestIceGlacierRelease];
+        });
     } failue:^(NSString *error) {
         NSLog(@"失败返回结果%@",error);
-    } parameterAPI:@"1729179",@"666666" ];
-
+    }];
 }
 
 

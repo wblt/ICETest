@@ -49,28 +49,20 @@ typedef void(^ProgressBlock)(ICEFloat progress);
 /**
  ICE 路由SSL 网络请求
 
- @param serviceName         请求服务名称
- @param serviceClass        代理类
+
  @param sessionName         会话名
  @param sessionPassword     会话密码
- @param param               请求参数
- @param action              请求API
  @param success             成功回调
  @param failue              失败回调
  */
-- (void)requestIceAsynchronousWithRouter:(NSString *)serviceName serviceClass:(Class)serviceClass name:(NSString *)sessionName password:(NSString *)sessionPassword executeAPI:(NSString *)action success:(SuccessBlock)success failue:(FailureBlock)failue parameterAPI:(id)param,...;
+- (void)requestIceAsynchronousWithRouter:(NSString *)sessionName password:(NSString *)sessionPassword success:(SuccessBlock)success failue:(FailureBlock)failue;
 
 /**
  ICE 直连 网络请求
  
- @param serviceName         请求服务名称
- @param serviceClass        代理类
- @param param               请求参数
- @param action              请求API
  @param success             成功回调
  @param failue              失败回调
  */
-- (void)requestIceAsynchronousWithLocator:(NSString *)serviceName serviceClass:(Class)serviceClass
-                    executeAPI:(NSString *)action success:(SuccessBlock)success failue:(FailureBlock)failue parameterAPI:(id)param,...;
+- (void)requestIceAsynchronousWithLocator:(SuccessBlock)success failue:(FailureBlock)failue;
 
 @end
