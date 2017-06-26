@@ -7,17 +7,20 @@
 //
 
 #import "ViewController.h"
-
+#import "M01001Test.h"
 #import <objc/Ice.h>
 
 
 @interface ViewController ()
+@property (nonatomic,strong) M01001Test *m01001Test;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.m01001Test = [[M01001Test alloc] init];
+    [self.m01001Test m01001001:@"1729179" pwd:@"666666"];
 }
 
 

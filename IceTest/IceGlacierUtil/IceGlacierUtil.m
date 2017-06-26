@@ -8,8 +8,6 @@
 
 #import "IceGlacierUtil.h"
 
-#import <objc/message.h>
-
 /**<ICE 连接器*/
 static id<ICECommunicator> iceCommunicator;
 
@@ -55,13 +53,12 @@ static NSTimer *iceSessionTimer;
         @synchronized(@"communicator") {
             ICEInitializationData *initData = [ICEInitializationData initializationData];
             initData.properties = [ICEUtil createProperties];
-            [initData.properties setProperty:@"Ice.Default.Locator" value:@"BBBGrid/Locator:tcp -h 192.168.0.139 -p 9561"];
+            [initData.properties setProperty:@"Ice.Default.Router" value:@"BBBGlacier2/router:tcp -h 192.168.0.139 -p 4611"];
             initData.dispatcher = ^(id<ICEDispatcherCall> call, id<ICEConnection> con) {
                 dispatch_sync(dispatch_get_main_queue(), ^ {
                     [call run];
                 });
             };
-            
             NSAssert(iceCommunicator == nil, @"iceCommunicator == nil");
             @try {
                 iceCommunicator = [ICEUtil createCommunicator:initData];
@@ -219,24 +216,9 @@ static NSTimer *iceSessionTimer;
             [NSThread sleepForTimeInterval:0.1f];
         }
         @try {
-            /*
-            // 获取父类代理
-            ICEObjectPrx *baseObjectPrx = [iceCommunicator stringToProxy:serviceName];
-            // 调用超时时间单位毫秒
-            baseObjectPrx = [baseObjectPrx ice_invocationTimeout:5000];
-            NSLog(@"base Identity:\nname:%@ category:%@",[baseObjectPrx ice_getIdentity].name, [baseObjectPrx ice_getIdentity].category);
-            // 获取代理类
-            SEL selector = NSSelectorFromString(@"checkedCast:");
-            objectPrx = [serviceClass performSelector:selector withObject:baseObjectPrx];
-            // 通过代理类调用接口获取数据
-            id result = [objectPrx performSelector:NSSelectorFromString(action) withObject:param];
-            // 回调数据
-            dispatch_async(dispatch_get_main_queue(), ^ {
-                if (success) {
-                    success(result);
-                }
-            });
-             */
+            if (success) {
+                success(iceCommunicator);
+            }
         }
         @catch (ICEEncapsulationException *exception) {
             dispatch_async(dispatch_get_main_queue(), ^ {
